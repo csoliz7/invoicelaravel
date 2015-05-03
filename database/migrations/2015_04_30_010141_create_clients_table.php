@@ -18,6 +18,9 @@ class CreateClientsTable extends Migration {
 			$table->string('firstname');
 			$table->string('lastname');
 			$table->string('email');
+
+			$table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 			$table->timestamps();
 		});
 	}
