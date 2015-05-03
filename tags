@@ -1,0 +1,91 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AppServiceProvider	app/Providers/AppServiceProvider.php	/^class AppServiceProvider extends ServiceProvider {$/;"	c
+AuthController	app/Http/Controllers/Auth/AuthController.php	/^class AuthController extends Controller {$/;"	c
+Authenticate	app/Http/Middleware/Authenticate.php	/^class Authenticate {$/;"	c
+BusServiceProvider	app/Providers/BusServiceProvider.php	/^class BusServiceProvider extends ServiceProvider {$/;"	c
+ClientController	app/Http/Controllers/ClientController.php	/^class ClientController extends Controller {$/;"	c
+ClientRequest	app/Http/Requests/ClientRequest.php	/^class ClientRequest extends Request {$/;"	c
+Clients	app/Clients.php	/^class Clients extends Model {$/;"	c
+Command	app/Commands/Command.php	/^abstract class Command {$/;"	c
+ConfigServiceProvider	app/Providers/ConfigServiceProvider.php	/^class ConfigServiceProvider extends ServiceProvider {$/;"	c
+Controller	app/Http/Controllers/Controller.php	/^abstract class Controller extends BaseController {$/;"	c
+Event	app/Events/Event.php	/^abstract class Event {$/;"	c
+EventServiceProvider	app/Providers/EventServiceProvider.php	/^class EventServiceProvider extends ServiceProvider {$/;"	c
+Handler	app/Exceptions/Handler.php	/^class Handler extends ExceptionHandler {$/;"	c
+HomeController	app/Http/Controllers/HomeController.php	/^class HomeController extends Controller {$/;"	c
+Inspire	app/Console/Commands/Inspire.php	/^class Inspire extends Command {$/;"	c
+Kernel	app/Console/Kernel.php	/^class Kernel extends ConsoleKernel {$/;"	c
+Kernel	app/Http/Kernel.php	/^class Kernel extends HttpKernel {$/;"	c
+PasswordController	app/Http/Controllers/Auth/PasswordController.php	/^class PasswordController extends Controller {$/;"	c
+RedirectIfAuthenticated	app/Http/Middleware/RedirectIfAuthenticated.php	/^class RedirectIfAuthenticated {$/;"	c
+Registrar	app/Services/Registrar.php	/^class Registrar implements RegistrarContract {$/;"	c
+Request	app/Http/Requests/Request.php	/^abstract class Request extends FormRequest {$/;"	c
+RouteServiceProvider	app/Providers/RouteServiceProvider.php	/^class RouteServiceProvider extends ServiceProvider {$/;"	c
+User	app/User.php	/^class User extends Model implements AuthenticatableContract, CanResetPasswordContract {$/;"	c
+VerifyCsrfToken	app/Http/Middleware/VerifyCsrfToken.php	/^class VerifyCsrfToken extends BaseVerifier {$/;"	c
+WelcomeController	app/Http/Controllers/WelcomeController.php	/^class WelcomeController extends Controller {$/;"	c
+__construct	app/Http/Controllers/Auth/AuthController.php	/^	public function __construct(Guard $auth, Registrar $registrar)$/;"	f
+__construct	app/Http/Controllers/Auth/PasswordController.php	/^	public function __construct(Guard $auth, PasswordBroker $passwords)$/;"	f
+__construct	app/Http/Controllers/ClientController.php	/^	public function __construct(Clients $client)$/;"	f
+__construct	app/Http/Controllers/HomeController.php	/^	public function __construct()$/;"	f
+__construct	app/Http/Controllers/WelcomeController.php	/^	public function __construct()$/;"	f
+__construct	app/Http/Middleware/Authenticate.php	/^	public function __construct(Guard $auth)$/;"	f
+__construct	app/Http/Middleware/RedirectIfAuthenticated.php	/^	public function __construct(Guard $auth)$/;"	f
+auth	app/Http/Controllers/Auth/AuthController.php	/^		$this->auth = $auth;$/;"	v
+auth	app/Http/Controllers/Auth/PasswordController.php	/^		$this->auth = $auth;$/;"	v
+auth	app/Http/Middleware/Authenticate.php	/^		$this->auth = $auth;$/;"	v
+auth	app/Http/Middleware/Authenticate.php	/^	protected $auth;$/;"	v
+auth	app/Http/Middleware/RedirectIfAuthenticated.php	/^		$this->auth = $auth;$/;"	v
+auth	app/Http/Middleware/RedirectIfAuthenticated.php	/^	protected $auth;$/;"	v
+authorize	app/Http/Requests/ClientRequest.php	/^	public function authorize()$/;"	f
+boot	app/Providers/AppServiceProvider.php	/^	public function boot()$/;"	f
+boot	app/Providers/BusServiceProvider.php	/^	public function boot(Dispatcher $dispatcher)$/;"	f
+boot	app/Providers/EventServiceProvider.php	/^	public function boot(DispatcherContract $events)$/;"	f
+boot	app/Providers/RouteServiceProvider.php	/^	public function boot(Router $router)$/;"	f
+client	app/Http/Controllers/ClientController.php	/^		$client =	 * Display the specified resource.$/;"	v
+client	app/Http/Controllers/ClientController.php	/^		$this->client = $client;$/;"	v
+client	app/Http/Controllers/ClientController.php	/^	private $client;$/;"	v
+clients	app/Http/Controllers/ClientController.php	/^		$clients = $this->client->all();$/;"	v
+commands	app/Console/Kernel.php	/^	protected $commands = [$/;"	v
+create	app/Http/Controllers/ClientController.php	/^	public function create()$/;"	f
+create	app/Services/Registrar.php	/^	public function create(array $data)$/;"	f
+description	app/Console/Commands/Inspire.php	/^	protected $description = 'Display an inspiring quote';$/;"	v
+destroy	app/Http/Controllers/ClientController.php	/^	public function destroy(Clients $client)$/;"	f
+dontReport	app/Exceptions/Handler.php	/^	protected $dontReport = [$/;"	v
+edit	app/Http/Controllers/ClientController.php	/^	public function edit(Clients $client)$/;"	f
+fillable	app/Clients.php	/^    protected $fillable = array('firstname','lastname','email');$/;"	v
+fillable	app/User.php	/^	protected $fillable = ['name', 'email', 'password'];$/;"	v
+handle	app/Console/Commands/Inspire.php	/^	public function handle()$/;"	f
+handle	app/Http/Middleware/Authenticate.php	/^	public function handle($request, Closure $next)$/;"	f
+handle	app/Http/Middleware/RedirectIfAuthenticated.php	/^	public function handle($request, Closure $next)$/;"	f
+handle	app/Http/Middleware/VerifyCsrfToken.php	/^	public function handle($request, Closure $next)$/;"	f
+hidden	app/User.php	/^	protected $hidden = ['password', 'remember_token'];$/;"	v
+index	app/Http/Controllers/ClientController.php	/^	public function index()$/;"	f
+index	app/Http/Controllers/HomeController.php	/^	public function index()$/;"	f
+index	app/Http/Controllers/WelcomeController.php	/^	public function index()$/;"	f
+listen	app/Providers/EventServiceProvider.php	/^	protected $listen = [$/;"	v
+map	app/Providers/RouteServiceProvider.php	/^	public function map(Router $router)$/;"	f
+middleware	app/Http/Kernel.php	/^	protected $middleware = [$/;"	v
+name	app/Console/Commands/Inspire.php	/^	protected $name = 'inspire';$/;"	v
+namespace	app/Providers/RouteServiceProvider.php	/^	protected $namespace = 'App\\Http\\Controllers';$/;"	v
+passwords	app/Http/Controllers/Auth/PasswordController.php	/^		$this->passwords = $passwords;$/;"	v
+register	app/Providers/AppServiceProvider.php	/^	public function register()$/;"	f
+register	app/Providers/BusServiceProvider.php	/^	public function register()$/;"	f
+register	app/Providers/ConfigServiceProvider.php	/^	public function register()$/;"	f
+registrar	app/Http/Controllers/Auth/AuthController.php	/^		$this->registrar = $registrar;$/;"	v
+render	app/Exceptions/Handler.php	/^	public function render($request, Exception $e)$/;"	f
+report	app/Exceptions/Handler.php	/^	public function report(Exception $e)$/;"	f
+routeMiddleware	app/Http/Kernel.php	/^	protected $routeMiddleware = [$/;"	v
+rules	app/Http/Requests/ClientRequest.php	/^	public function rules()$/;"	f
+schedule	app/Console/Kernel.php	/^	protected function schedule(Schedule $schedule)$/;"	f
+show	app/Http/Controllers/ClientController.php	/^	public function show(Clients $client)$/;"	f
+store	app/Http/Controllers/ClientController.php	/^	public function store(ClientRequest $request)$/;"	f
+table	app/Clients.php	/^	protected $table = 'clients';$/;"	v
+table	app/User.php	/^	protected $table = 'users';$/;"	v
+update	app/Http/Controllers/ClientController.php	/^	public function update(ClientRequest $request, Clients $client)$/;"	f
+validator	app/Services/Registrar.php	/^	public function validator(array $data)$/;"	f
