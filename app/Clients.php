@@ -12,6 +12,17 @@ class Clients extends Model {
   public function user()
   {
     return $this->belongsTo('App\User');
-  } 
+  }
+
+    public function address(){
+
+        return $this->hasOne('App\Address');
+    }
+
+    public function invoice(){
+        return $this->hasMany('App\Invoice');
+    }
+
+
 
 }

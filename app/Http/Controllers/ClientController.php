@@ -1,7 +1,6 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Clients;
 use Illuminate\Support\Facades\Session;
@@ -30,8 +29,8 @@ class ClientController extends Controller {
 	 */
 	public function index()
 	{
-		$clients = $this->client->all();
-		return view('clients.clients')->with('clients', $clients)->withTitle('Clients List');
+
+		return view('clients.clients')->with('clients', $this->client->all())->withTitle('Clients List');
 	}
 
 	/**
@@ -39,9 +38,10 @@ class ClientController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create(Request $request)
 	{
-		return view('clients.create')->withTitle('Create a New Client');
+		$user = $request->user();
+		return view('clients.create')->with('user', $user)->withTitle('Create a New Client');
 	}
 
 	/**
@@ -76,9 +76,10 @@ class ClientController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit(Clients $client)
+	public function edit(Clients $client , Request $request)
 	{
-		return view('clients.edit')->with('client',$client)->withTitle('Edit Client Information');
+		$user = $request->user();
+		return view('clients.edit')->with(array('client'=>$client, 'user'=>$user))->withTitle('Edit Client Information');
 	}
 
 	/**
@@ -98,6 +99,7 @@ class ClientController extends Controller {
 
 	/**
 	 * Remove the specified resource from storage.
+	 * Model Binding
 	 *
 	 * @param  int  $id
 	 * @return Response

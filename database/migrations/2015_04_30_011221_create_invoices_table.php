@@ -16,9 +16,14 @@ class CreateInvoicesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->enum('status', ['open','closed', 'overdue', 'paid']);
+			$table->date('date_created');
+            $table->date('date_due');
 			$table->decimal('total', 5,2);
+
 			$table->integer('client_id')->unsigned();
-			$table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');
+			$table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade')->onUpdate('cascade');
+
+
 			$table->timestamps();
 		});
 	}

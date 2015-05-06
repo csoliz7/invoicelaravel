@@ -15,9 +15,18 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
-/*Route::controllers([
+Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
-]);*/
+]);
 
 Route::resource('client','ClientController');
+
+Route::get('/client/create',  ['middleware'=>'auth', 'uses' =>'ClientController@create']);
+Route::get('/client/{client}/edit',  ['middleware'=>'auth', 'uses' =>'ClientController@edit']);
+Route::get('/client/{client}',  ['middleware'=>'auth', 'uses' =>'ClientController@destroy']);
+
+
+
+Route::resource('invoices', 'InvoiceController');
+Route::resource('items','ItemController');
